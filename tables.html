@@ -119,7 +119,7 @@
                   <td>21,99</td>
                   <td>-0,0201</td>
                   <td>450,81M</td>
-                  <td><a class="btn btn-primary btn-block" href=#>Comprar</a></td>
+                  <td><a class="btn btn-primary btn-block" data-toggle="modal" data-target="#BuyModal">Comprar</a></td>
                 </tr>
                 <tr>
                   <td>B3SA3</td>
@@ -688,6 +688,27 @@
         </div>
       </div>
     </div>
+
+    <!-- Buy Modal-->    
+    <div class="modal fade" id="BuyModal" tabindex="-1" role="dialog" aria-labelledby="BuyModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BuyModalLabel">Comprar <AÇÃO></h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Selecione "Comprar" para adicionar <AÇÃO> ao seu porftólio.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            <a class="btn btn-primary" href="tables.html">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
